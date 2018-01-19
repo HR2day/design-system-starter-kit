@@ -17,6 +17,29 @@ $static-font-path: '/assets/fonts/webfonts';
 //
 // We can also add styles directly in this file, like so:
 //
+.slds-card__footer {
+  margin-top: 0rem;
+}
+.slds-card__body {
+  margin-bottom: 0rem;
+}
+
+.slds-brand-band {
+
+  &:before {
+    background-image:
+      url($brand-band-default-image),
+      linear-gradient(to top, $brand-background-dark-transparent 0, rgba(27,95,158, 1.0));
+  }
+
+  &:after {
+    background-image: linear-gradient(to bottom, $brand-background-primary-transparent 60%, rgba(176, 196, 223, 1.0));
+  }
+}
+
+html {
+  background: rgba(176, 196, 223, 1.0);
+}
 
 // Push down the global navigation below the header using a placeholder element
 .app-header-placeholder {
